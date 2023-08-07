@@ -36,13 +36,17 @@
   <body>
     
     <h2>Cute Shiori~n Giggles</h2>
-
-    <audio>
-      <source src="Shiori_giggle_01.mp3" type="audio/mpeg">
-    </audio>
     
-    <img src="cute shiorin.jpg" alt="Cute Shiori~n!" width="156" height="146" class="center" onclick="document.getElementById('Shiori_giggle_01.mp3').play();">
-      
+    <script>
+      var audio = new Audio('Shiori_giggle_01.mp3')
+
+      audio.oncanplaythrough = function(){
+        audio.play();
+      }
+    </script>
+
+    <input type="image" src="cute shiorin.jpg" onclick="audio.play()">
+    
     <p> Click the shiori~n for cute giggles! </p>
 
     <p><a href="https://www.youtube.com/@ShioriNovella">More shiorium</a></p>
