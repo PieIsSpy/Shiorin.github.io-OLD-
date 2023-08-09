@@ -27,3 +27,9 @@ button {
     appearance: none;
     background-color: inherit;
 }
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
