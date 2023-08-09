@@ -20,3 +20,10 @@ body {
     background-image: url('badapple.png');
     background-size: cover;
 }
+
+button {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+}
