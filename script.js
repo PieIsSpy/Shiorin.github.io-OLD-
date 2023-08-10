@@ -7,11 +7,11 @@ function arrayLength(giggle) {
   return [rand(0, sounds.length)];
 }
 
-document.querySelector('#button').addEventListener('click', function giggle(sounds) {
+function giggle(sounds) {
   min = Math.ceil(1);
   max = Math.floor(12);
   return Math.floor(Math.random() * (max - min + 1) + min);
   const soundToPlay = rand(0,12) === 0 ? arrayLength(sounds);
   var audio = new Audio('Cute Shiorin Giggles/' + soundToPlay);
   audio.play();
-})
+}
