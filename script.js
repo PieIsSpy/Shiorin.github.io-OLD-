@@ -3,18 +3,8 @@ img.setAttribute('src','cute shiorin.jpg');
 
 const sounds = ['giggle1', 'giggle2', 'giggle3', 'giggle4', 'giggle5', 'giggle6', 'giggle7', 'giggle8', 'giggle9', 'giggle10', 'giggle11', 'giggle12'];
 
-function arrayLength(giggle) {
-  return [rand(0, sounds.length)];
-}
-
-function rand(min, max) {
-  min = Math.ceil(1);
-  max = Math.floor(12);
-  return Math.floor(Math.random() * (max - min + 1) + min);
-}
-
-function giggle(sounds) {
-  const soundToPlay = rand(0,12) === 0 ? arrayLength(sounds);
-  var audio = new Audio('Cute Shiorin Giggles/' + soundToPlay);
+function randomGiggles() {
+  const audioContent = Math.floor(Math.random() * sounds.length);
+  const audio = new Audio(sounds[audioContent]);
   audio.play();
 }
