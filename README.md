@@ -1,4 +1,4 @@
 # Shiorin.github.io (OLD)
-Shiori~n!
+This link is broken: https://pieisspy.github.io/Shiorin.github.io/
 
-Site: https://pieisspy.github.io/Shiorin.github.io/
+Go to the other repository
